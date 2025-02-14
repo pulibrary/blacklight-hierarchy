@@ -33,7 +33,10 @@ else
   end
 
   case ENV['RAILS_VERSION']
+  when /^6/, /^7.0/
+    gem 'logger'
   when /^5.[12]/, /^6.0/
+    gem 'logger'
     gem 'sass-rails', '~> 5.0'
   end
 end

@@ -1,6 +1,7 @@
 ENV['RAILS_ENV'] ||= 'test'
 
 require 'rsolr'
+require 'logger'
 
 require 'engine_cart'
 EngineCart.load_application!
